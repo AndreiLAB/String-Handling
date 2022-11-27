@@ -1,1 +1,50 @@
-gg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-weight: normal;
+        }
+        td input {
+            width: 30px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Counting L letters:</h4>
+
+    <table>
+        <tr>
+            <label for="Ls">how many L letters the input contained?</label><input type="text" placeholder="Type a word or phrase..." id="Ls"/>
+            <td><button type="button" onclick = FindL()>Looking for L's</button></td>
+            <td><p id="LCount"></p></td>
+        </tr>
+    </table>
+
+    <h4>Counting wovels:</h4>
+
+    <table>
+        <tr>
+            <label for="Wovel">How many vowels the input contained?</label><input type="text" placeholder="Type a word or phrase..." id="Wovel"/>
+            <td><button type="button" onclick = FindNoice()>Checking for wovels</button></td>
+            <td><p id="Saying"></p></td>
+        </tr>
+    </table>
+
+    <h4>Palindrome:</h4>
+    <table>
+        <tr>
+            <label for="Palindrome">How is input palindrome?</label><input type="text" placeholder="Type a word or phrase..." id="Palindrome"/>
+            <td><button type="button" onclick = Palindrome()>Checking if word is a palindrome</button></td>
+            <td><p id="palindromeWord"></p></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
